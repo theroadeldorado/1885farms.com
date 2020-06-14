@@ -23,6 +23,9 @@
     "vlucas/phpdotenv": "^3.1.0",
     "wpackagist-plugin/lh-hsts": "^1.24",
     "wpackagist-plugin/pantheon-advanced-page-cache": ">=0.3.0",
+    "wpackagist-plugin/post-duplicator": "^2.20",
+    "wpackagist-plugin/safe-svg": "^1.9",
+    "wpackagist-plugin/wordpress-seo": "^14.3",
     "wpackagist-plugin/wp-native-php-sessions": ">=0.6.9",
     "wpackagist-theme/twentynineteen": "^1.2"
   },
