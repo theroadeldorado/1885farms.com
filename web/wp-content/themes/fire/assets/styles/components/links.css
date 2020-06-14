@@ -1,0 +1,37 @@
+/*! purgecss start ignore */
+a {
+  @apply text-primary-500 underline;
+  @apply transition-all duration-200 cursor-pointer;
+
+  &:focus {
+    outline: thin dotted theme(colors.accent.400);
+  }
+}
+
+.link {
+  @apply inline-flex items-center;
+  @apply font-body text-18 tracking-wide leading-none no-underline;
+  @apply transition-all duration-200 cursor-pointer;
+
+  svg {
+    @apply w-4;
+
+    &:first-child {
+      @apply mr-2;
+    }
+
+    &:last-child {
+      @apply ml-2;
+    }
+  }
+
+  &-primary {
+    @apply text-primary-500;
+
+    &:hover,
+    &:active {
+      @apply text-primary-700;
+    }
+  }
+}
+/*! purgecss end ignore */

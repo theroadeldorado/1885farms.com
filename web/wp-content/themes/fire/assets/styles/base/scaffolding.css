@@ -1,0 +1,33 @@
+/*! purgecss start ignore */
+
+img {
+  max-width: 100%;
+}
+
+pre {
+  @apply bg-gray-100 p-2 rounded-lg text-14 text-gray-800;
+}
+
+hr {
+  @apply my-6;
+}
+
+@responsive {
+  .break-container {
+    &-right {
+      margin-right: calc(50% - 50vw);
+      @apply pr-0;
+    }
+    &-left {
+      margin-left: calc(50% - 50vw);
+      @apply pl-0;
+    }
+    &-both {
+      margin-right: calc(50% - 50vw);
+      margin-left: calc(50% - 50vw);
+      @apply px-0;
+    }
+  }
+}
+
+/*! purgecss end ignore */

@@ -1,0 +1,48 @@
+{
+  "name": "fire",
+  "description": "Custom Wordpress theme",
+  "author": "SKYCATCHFIRE",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress",
+    "debug": "NODE_ENV=development webpack --watch",
+    "debug:prod": "NODE_ENV=production webpack  --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-at-rules-variables": "^0.1.10",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.2",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-filters": "^3.0.0",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "alpinejs": "^2.2.5",
+    "balance-text": "^3.3.0",
+    "core-js": "^3.6.4",
+    "intersection-observer": "^0.7.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "lozad": "^1.14.0",
+    "tailwindcss": "^1.4.5"
+  }
+}

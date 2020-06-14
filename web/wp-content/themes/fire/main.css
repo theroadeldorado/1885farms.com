@@ -1,0 +1,22 @@
+/* dependencies */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* base */
+@import './assets/styles/base/fonts';
+@import './assets/styles/base/scaffolding';
+@import './assets/styles/base/typography';
+
+/* global components */
+@import './assets/styles/components/buttons';
+@import './assets/styles/components/column-count';
+@import './assets/styles/components/forms';
+@import './assets/styles/components/grid';
+@import './assets/styles/components/links';
+@import './assets/styles/components/skip-to-main';
+@import './assets/styles/components/videos';
+
+/* template components */
+
+/* dependencies */
+@import 'tailwindcss/utilities';

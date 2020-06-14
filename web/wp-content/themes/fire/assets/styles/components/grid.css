@@ -1,0 +1,19 @@
+@responsive {
+  .break-container {
+    &-right {
+      @apply pr-0;
+      margin-right: calc(50% - 50vw);
+    }
+
+    &-left {
+      @apply pl-0;
+      margin-left: calc(50% - 50vw);
+    }
+
+    &-both {
+      @apply px-0;
+      margin-right: calc(50% - 50vw);
+      margin-left: calc(50% - 50vw);
+    }
+  }
+}
