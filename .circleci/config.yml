@@ -19,10 +19,10 @@ defaults: &defaults
     # ADMIN_PASSWORD: The admin password to use when installing.
     # ADMIN_EMAIL:  The email address to give the admin when installing.
     #=========================================================================
-    TZ: "/usr/share/zoneinfo/America/Los_Angeles"
-  
+    TZ: '/usr/share/zoneinfo/America/Los_Angeles'
+
     # The variables below usually do not need to be modified.
-  
+
     #======================================================================================================================================
     # Circle CI 2.0 does not yet expand environment variables so they have to be manually EXPORTed
     # Once environment variables can be expanded the variables below can be uncommented and the EXPORTs in set-up-globals.sh can be removed
@@ -30,7 +30,7 @@ defaults: &defaults
     # See: https://discuss.circleci.com/t/environment-variable-expansion-in-working-directory/11322
     # See: https://discuss.circleci.com/t/circle-2-0-global-environment-variables/8681
     #======================================================================================================================================
-  
+
     NOTIFY: 'scripts/github/add-commit-comment {project} {sha} "Created multidev environment [{site}#{env}]({dashboard-url})." {site-url}'
     ADMIN_USERNAME: admin
     TERM: dumb
@@ -206,56 +206,12 @@ jobs:
           path: /tmp/artifacts
           destination: artifacts
 
-  composer_lock_updater:
-    <<: *defaults
-    steps:
-      - checkout
-
-      - run:
-          # Set TERMINUS_ENV and related environment variables.
-          # https://github.com/pantheon-systems/docker-build-tools-ci/blob/6.x/scripts/set-environment
-          name: setup-environment-vars
-          command: /build-tools-ci/scripts/set-environment
-
-      - run:
-          name: Authenticate with Terminus
-          command: terminus -n auth:login --machine-token="$TERMINUS_TOKEN"
-
-      - run:
-          name: run composer lock updater
-          command: set -e && terminus project:clu $TERMINUS_SITE
-
 workflows:
   version: 2
   build_deploy_and_test:
     jobs:
       - configure_env_vars
-      - static_tests
       - build_php
       - deploy_to_pantheon:
           requires:
-            - static_tests
             - build_php
-      - visual_regression_test:
-          requires:
-            - configure_env_vars
-            - deploy_to_pantheon
-          filters:
-            branches:
-              ignore:
-                - master
-      - behat_test:
-          requires:
-            - deploy_to_pantheon
-            - visual_regression_test
-
-  scheduled_update_check:
-    triggers:
-       - schedule:
-           cron: "0 0 * * *"
-           filters:
-             branches:
-              only:
-                - master
-    jobs:
-      - composer_lock_updater
