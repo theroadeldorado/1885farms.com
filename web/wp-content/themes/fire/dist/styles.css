@@ -630,9 +630,9 @@ video {
 /* src is relative to `main.css` */
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
 
-  src: url(fonts/OpenSans-Regular.ttf);
+  src: url(fonts/Montserrat-Regular.ttf);
 
   font-weight: normal;
 
@@ -640,9 +640,9 @@ video {
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
 
-  src: url(fonts/OpenSans-Regular.ttf);
+  src: url(fonts/Montserrat-Regular.ttf);
 
   font-weight: 400;
 
@@ -650,9 +650,9 @@ video {
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
 
-  src: url(fonts/OpenSans-Italic.ttf);
+  src: url(fonts/Montserrat-Italic.ttf);
 
   font-weight: normal;
 
@@ -660,9 +660,9 @@ video {
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
 
-  src: url(fonts/OpenSans-Bold.ttf);
+  src: url(fonts/Montserrat-Bold.ttf);
 
   font-weight: 700;
 
@@ -670,9 +670,9 @@ video {
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
 
-  src: url(fonts/OpenSans-SemiBold.ttf);
+  src: url(fonts/Montserrat-SemiBold.ttf);
 
   font-weight: 500;
 
@@ -680,9 +680,9 @@ video {
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
 
-  src: url(fonts/OpenSans-Light.ttf);
+  src: url(fonts/Montserrat-Light.ttf);
 
   font-weight: 300;
 
