@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  PROXY_URL: 'http://1885farms.fire/',
+  PROXY_URL: 'https://1885farms.fire/',
   DEFAULT_PORT: 3000,
 
   ASSET_PATH: path.resolve(__dirname, './assets'),
