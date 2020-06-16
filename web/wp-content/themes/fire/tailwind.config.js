@@ -103,7 +103,8 @@ module.exports = {
       move: 'move',
     },
     fontFamily: {
-      body: ['"Open Sans"', 'Arial', 'sans-serif'],
+      body: ['"Montserrat"', 'Arial', 'sans-serif'],
+      heading: ['"PlayfairDisplay"', 'serif'],
     },
     fontWeight: {
       light: '300',

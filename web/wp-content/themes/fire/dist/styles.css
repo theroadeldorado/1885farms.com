@@ -796,7 +796,7 @@ hr {
 
 html,
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   --text-opacity: 1;
   color: #2F2F2F;
   color: rgba(47, 47, 47, var(--text-opacity));
@@ -815,7 +815,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "PlayfairDisplay", serif;
 }
 
 h1 {
@@ -1051,7 +1052,7 @@ textarea.form-input,
   --text-opacity: 1;
   color: #5F5F5F;
   color: rgba(95, 95, 95, var(--text-opacity));
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .form-type-checkbox .form-input-label:before,
@@ -1146,7 +1147,7 @@ a:focus {
 .link {
   display: inline-flex;
   align-items: center;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
   letter-spacing: 0.025em;
@@ -5935,7 +5936,11 @@ a:focus {
 }
 
 .font-body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.font-heading {
+  font-family: "PlayfairDisplay", serif;
 }
 
 .font-light {
@@ -24808,7 +24813,11 @@ a:focus {
   }
 
   .smd\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .smd\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .smd\:font-light {
@@ -43662,7 +43671,11 @@ a:focus {
   }
 
   .mdd\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .mdd\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .mdd\:font-light {
@@ -62516,7 +62529,11 @@ a:focus {
   }
 
   .lgd\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .lgd\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .lgd\:font-light {
@@ -81370,7 +81387,11 @@ a:focus {
   }
 
   .xld\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .xld\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .xld\:font-light {
@@ -100224,7 +100245,11 @@ a:focus {
   }
 
   .sm\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .sm\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .sm\:font-light {
@@ -119078,7 +119103,11 @@ a:focus {
   }
 
   .md\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .md\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .md\:font-light {
@@ -137932,7 +137961,11 @@ a:focus {
   }
 
   .lg\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .lg\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .lg\:font-light {
@@ -156786,7 +156819,11 @@ a:focus {
   }
 
   .xl\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .xl\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .xl\:font-light {
@@ -175640,7 +175677,11 @@ a:focus {
   }
 
   .ie\:font-body {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+  }
+
+  .ie\:font-heading {
+    font-family: "PlayfairDisplay", serif;
   }
 
   .ie\:font-light {
