@@ -51,7 +51,7 @@ if ( ! isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ):
 	 * Define site and home URLs
 	 */
 	// HTTP is still the default scheme for now.
-	$scheme = 'http';
+	$scheme = 'https';
 	// If we have detected that the end use is HTTPS, make sure we pass that
 	// through here, so <img> tags and the like don't generate mixed-mode
 	// content warnings.
