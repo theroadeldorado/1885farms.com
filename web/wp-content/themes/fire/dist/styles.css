@@ -826,7 +826,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.125;
+  font-size: 2.125rem;
   line-height: 2.5rem;
 }
 
@@ -856,7 +856,7 @@ h6 {
 }
 
 .heading-2 {
-  font-size: 2.125;
+  font-size: 2.125rem;
   line-height: 2.5rem;
 }
 
@@ -5313,12 +5313,12 @@ a:focus {
 }
 
 .text-34 {
-  font-size: 2.125;
+  font-size: 2.125rem;
   line-height: 2.5rem;
 }
 
 .text-38 {
-  font-size: 2.375;
+  font-size: 2.375rem;
   line-height: 3rem;
 }
 
@@ -22057,12 +22057,12 @@ a:focus {
   }
 
   .smd\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .smd\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -38782,12 +38782,12 @@ a:focus {
   }
 
   .mdd\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .mdd\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -55507,12 +55507,12 @@ a:focus {
   }
 
   .lgd\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .lgd\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -72232,12 +72232,12 @@ a:focus {
   }
 
   .xld\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .xld\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -88957,12 +88957,12 @@ a:focus {
   }
 
   .sm\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .sm\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -105682,12 +105682,12 @@ a:focus {
   }
 
   .md\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .md\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -122407,12 +122407,12 @@ a:focus {
   }
 
   .lg\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .lg\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -139132,12 +139132,12 @@ a:focus {
   }
 
   .xl\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .xl\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
@@ -155857,12 +155857,12 @@ a:focus {
   }
 
   .ie\:text-34 {
-    font-size: 2.125;
+    font-size: 2.125rem;
     line-height: 2.5rem;
   }
 
   .ie\:text-38 {
-    font-size: 2.375;
+    font-size: 2.375rem;
     line-height: 3rem;
   }
 
