@@ -5959,6 +5959,10 @@ a:focus {
   font-weight: 700;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .hover\:font-light:hover {
   font-weight: 300;
 }
@@ -5975,6 +5979,10 @@ a:focus {
   font-weight: 700;
 }
 
+.hover\:font-black:hover {
+  font-weight: 900;
+}
+
 .focus\:font-light:focus {
   font-weight: 300;
 }
@@ -5989,6 +5997,10 @@ a:focus {
 
 .focus\:font-bold:focus {
   font-weight: 700;
+}
+
+.focus\:font-black:focus {
+  font-weight: 900;
 }
 
 .h-0 {
@@ -6164,8 +6176,23 @@ a:focus {
 }
 
 .text-34 {
-  font-size: 2.125rem;
+  font-size: 2.125;
   line-height: 2.5rem;
+}
+
+.text-38 {
+  font-size: 2.375;
+  line-height: 3rem;
+}
+
+.text-42 {
+  font-size: 2.625rem;
+  line-height: 2.5rem;
+}
+
+.text-48 {
+  font-size: 3rem;
+  line-height: 3.75rem;
 }
 
 .leading-3 {
@@ -24836,6 +24863,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .smd\:font-black {
+    font-weight: 900;
+  }
+
   .smd\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -24852,6 +24883,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .smd\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .smd\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -24866,6 +24901,10 @@ a:focus {
 
   .smd\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .smd\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .smd\:h-0 {
@@ -25041,8 +25080,23 @@ a:focus {
   }
 
   .smd\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .smd\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .smd\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .smd\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .smd\:leading-3 {
@@ -43694,6 +43748,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .mdd\:font-black {
+    font-weight: 900;
+  }
+
   .mdd\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -43710,6 +43768,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .mdd\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .mdd\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -43724,6 +43786,10 @@ a:focus {
 
   .mdd\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .mdd\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .mdd\:h-0 {
@@ -43899,8 +43965,23 @@ a:focus {
   }
 
   .mdd\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .mdd\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .mdd\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .mdd\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .mdd\:leading-3 {
@@ -62552,6 +62633,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .lgd\:font-black {
+    font-weight: 900;
+  }
+
   .lgd\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -62568,6 +62653,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .lgd\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .lgd\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -62582,6 +62671,10 @@ a:focus {
 
   .lgd\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .lgd\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .lgd\:h-0 {
@@ -62757,8 +62850,23 @@ a:focus {
   }
 
   .lgd\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .lgd\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .lgd\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .lgd\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .lgd\:leading-3 {
@@ -81410,6 +81518,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .xld\:font-black {
+    font-weight: 900;
+  }
+
   .xld\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -81426,6 +81538,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .xld\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .xld\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -81440,6 +81556,10 @@ a:focus {
 
   .xld\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .xld\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .xld\:h-0 {
@@ -81615,8 +81735,23 @@ a:focus {
   }
 
   .xld\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .xld\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .xld\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .xld\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .xld\:leading-3 {
@@ -100268,6 +100403,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .sm\:font-black {
+    font-weight: 900;
+  }
+
   .sm\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -100284,6 +100423,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .sm\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .sm\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -100298,6 +100441,10 @@ a:focus {
 
   .sm\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .sm\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .sm\:h-0 {
@@ -100473,8 +100620,23 @@ a:focus {
   }
 
   .sm\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .sm\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .sm\:leading-3 {
@@ -119126,6 +119288,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .md\:font-black {
+    font-weight: 900;
+  }
+
   .md\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -119142,6 +119308,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .md\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .md\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -119156,6 +119326,10 @@ a:focus {
 
   .md\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .md\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .md\:h-0 {
@@ -119331,8 +119505,23 @@ a:focus {
   }
 
   .md\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .md\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .md\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .md\:leading-3 {
@@ -137984,6 +138173,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .lg\:font-black {
+    font-weight: 900;
+  }
+
   .lg\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -138000,6 +138193,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .lg\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .lg\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -138014,6 +138211,10 @@ a:focus {
 
   .lg\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .lg\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .lg\:h-0 {
@@ -138189,8 +138390,23 @@ a:focus {
   }
 
   .lg\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .lg\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .lg\:leading-3 {
@@ -156842,6 +157058,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .xl\:font-black {
+    font-weight: 900;
+  }
+
   .xl\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -156858,6 +157078,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .xl\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .xl\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -156872,6 +157096,10 @@ a:focus {
 
   .xl\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .xl\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .xl\:h-0 {
@@ -157047,8 +157275,23 @@ a:focus {
   }
 
   .xl\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .xl\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .xl\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .xl\:leading-3 {
@@ -175700,6 +175943,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .ie\:font-black {
+    font-weight: 900;
+  }
+
   .ie\:hover\:font-light:hover {
     font-weight: 300;
   }
@@ -175716,6 +175963,10 @@ a:focus {
     font-weight: 700;
   }
 
+  .ie\:hover\:font-black:hover {
+    font-weight: 900;
+  }
+
   .ie\:focus\:font-light:focus {
     font-weight: 300;
   }
@@ -175730,6 +175981,10 @@ a:focus {
 
   .ie\:focus\:font-bold:focus {
     font-weight: 700;
+  }
+
+  .ie\:focus\:font-black:focus {
+    font-weight: 900;
   }
 
   .ie\:h-0 {
@@ -175905,8 +176160,23 @@ a:focus {
   }
 
   .ie\:text-34 {
-    font-size: 2.125rem;
+    font-size: 2.125;
     line-height: 2.5rem;
+  }
+
+  .ie\:text-38 {
+    font-size: 2.375;
+    line-height: 3rem;
+  }
+
+  .ie\:text-42 {
+    font-size: 2.625rem;
+    line-height: 2.5rem;
+  }
+
+  .ie\:text-48 {
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 
   .ie\:leading-3 {

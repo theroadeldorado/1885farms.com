@@ -111,6 +111,7 @@ module.exports = {
       normal: '400',
       medium: '500',
       bold: '700',
+      black: '900',
     },
     fontSize: {
       12: ['0.75rem', '1rem'],
@@ -121,7 +122,10 @@ module.exports = {
       24: ['1.5rem', '1.75rem'],
       26: ['1.625rem', '1.75rem'],
       28: ['1.75rem', '2.125rem'],
-      34: ['2.125rem', '2.5rem'],
+      34: ['2.125', '2.5rem'],
+      38: ['2.375', '3rem'],
+      42: ['2.625rem', '2.5rem'],
+      48: ['3rem', '3.75rem'],
     },
     aspectRatio: {
       none: 0,
