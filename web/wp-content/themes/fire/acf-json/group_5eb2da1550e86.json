@@ -77,6 +77,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5ef7a3d79f7a8": {
+                    "key": "layout_5ef7a3d79f7a8",
+                    "name": "styled_list",
+                    "label": "Styled List",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ef7a3e19f7a9",
+                            "label": "Styled List",
+                            "name": "styled_list",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ef7a3406ff70"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Section",
@@ -101,5 +132,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1593229158
+    "modified": 1593287677
 }
