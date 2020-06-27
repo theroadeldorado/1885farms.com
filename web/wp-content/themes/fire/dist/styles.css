@@ -768,6 +768,10 @@ pre {
   color: rgba(71, 71, 71, var(--text-opacity));
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .site {
   display: flex;
   flex-direction: column;
@@ -797,6 +801,9 @@ hr {
 .break-container-right {
   margin-right: calc(50% - 50vw);
   padding-right: 0;
+  right: 0.5rem;
+  position: relative;
+  margin-left: 0.5rem;
 }
 
 .break-container-left {
@@ -17958,6 +17965,9 @@ a:focus {
   .smd\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .smd\:break-container-left {
@@ -34683,6 +34693,9 @@ a:focus {
   .mdd\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .mdd\:break-container-left {
@@ -51408,6 +51421,9 @@ a:focus {
   .lgd\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .lgd\:break-container-left {
@@ -68133,6 +68149,9 @@ a:focus {
   .xld\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .xld\:break-container-left {
@@ -84858,6 +84877,9 @@ a:focus {
   .sm\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .sm\:break-container-left {
@@ -101583,6 +101605,9 @@ a:focus {
   .md\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .md\:break-container-left {
@@ -118308,6 +118333,9 @@ a:focus {
   .lg\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .lg\:break-container-left {
@@ -135033,6 +135061,9 @@ a:focus {
   .xl\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .xl\:break-container-left {
@@ -151758,6 +151789,9 @@ a:focus {
   .ie\:break-container-right {
     margin-right: calc(50% - 50vw);
     padding-right: 0;
+    right: 0.5rem;
+    position: relative;
+    margin-left: 0.5rem;
   }
 
   .ie\:break-container-left {

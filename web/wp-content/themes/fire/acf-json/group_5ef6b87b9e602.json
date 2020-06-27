@@ -85,7 +85,7 @@
             "label": "Background Color",
             "name": "background_color",
             "type": "button_group",
-            "instructions": "blue : Blue\r\ngreen : Green\r\npink : Pink",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -93,9 +93,35 @@
                 "class": "",
                 "id": ""
             },
-            "choices": [],
+            "choices": {
+                "blue": "Blue",
+                "green": "Green",
+                "pink": "Pink"
+            },
             "allow_null": 0,
-            "default_value": "",
+            "default_value": "blue",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5ef6cf45642cf",
+            "label": "Image Position",
+            "name": "image_position",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "right": "Right",
+                "left": "Left"
+            },
+            "allow_null": 0,
+            "default_value": "right",
             "layout": "horizontal",
             "return_format": "value"
         },
@@ -138,5 +164,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1593229289
+    "modified": 1593233265
 }
