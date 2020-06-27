@@ -8,6 +8,16 @@ pre {
   @apply bg-gray-100 p-2 rounded-lg text-14 text-gray-800;
 }
 
+.admin-bar {
+  .site-header {
+    margin-top: 46px;
+
+    @screen lg {
+      @apply mt-8;
+    }
+  }
+}
+
 hr {
   @apply my-6;
 }
