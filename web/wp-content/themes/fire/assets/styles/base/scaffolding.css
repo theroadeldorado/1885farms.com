@@ -8,6 +8,14 @@ pre {
   @apply bg-gray-100 p-2 rounded-lg text-14 text-gray-800;
 }
 
+.site {
+  @apply flex flex-col min-h-screen;
+
+  &-main {
+    @apply flex-grow;
+  }
+}
+
 .admin-bar {
   .site-header {
     margin-top: 46px;

@@ -768,6 +768,16 @@ pre {
   color: rgba(71, 71, 71, var(--text-opacity));
 }
 
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
 .admin-bar .site-header {
   margin-top: 46px
 }
