@@ -11,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "20",
                 "class": "",
                 "id": ""
             },
@@ -259,7 +259,7 @@
                                 "custom": "Custom"
                             },
                             "allow_null": 0,
-                            "default_value": "md",
+                            "default_value": "none",
                             "layout": "horizontal",
                             "return_format": "value"
                         },
@@ -315,7 +315,7 @@
                                 "custom": "Custom"
                             },
                             "allow_null": 0,
-                            "default_value": "sm",
+                            "default_value": "none",
                             "layout": "horizontal",
                             "return_format": "value"
                         },
@@ -371,7 +371,7 @@
                                 "custom": "Custom"
                             },
                             "allow_null": 0,
-                            "default_value": "sm",
+                            "default_value": "none",
                             "layout": "horizontal",
                             "return_format": "value"
                         },
@@ -426,5 +426,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1589505237
+    "modified": 1593227838
 }
