@@ -39,27 +39,58 @@
         'title' => 'Font Style Presets',
         'items' => array(
           array(
-            'title' => 'Example Preset',
+            'title' => 'Heading Cursive',
             'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
-            'classes' => 'test'
+            'classes' => 'heading-fancy'
           ),
         ),
       ),
       array(
-        'title' => 'Font Family',
+        'title' => 'Buttons',
         'items' => array(
           array(
-            'title' => 'Open Sans',
-            'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
-            'classes' => 'font-body'
+            'title' => 'Pink',
+            'selector' => 'a',
+            'classes' => 'button button-accent'
+          ),
+          array(
+            'title' => 'Green',
+            'selector' => 'a',
+            'classes' => 'button button-primary'
+          ),
+          array(
+            'title' => 'Blue',
+            'selector' => 'a',
+            'classes' => 'button button-secondary'
+          ),
+          array(
+            'title' => 'Pink Outlined',
+            'selector' => 'a',
+            'classes' => 'button button-accent button-accent-outlined'
+          ),
+          array(
+            'title' => 'Green Outlined',
+            'selector' => 'a',
+            'classes' => 'button button-primary button-primary-outlined'
+          ),
+          array(
+            'title' => 'Blue Outlined',
+            'selector' => 'a',
+            'classes' => 'button button-secondary button-secondary-outlined'
           ),
         ),
+      ),
+      array(
+        'title' => 'Border Bottom',
+        'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
+        'classes' => 'border-bottom'
       ),
       array(
         'title' => 'Balance Text',
         'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
         'classes' => 'balance-text'
       ),
+
     );
     $config['style_formats'] = json_encode( $temp_array );
     return $config;

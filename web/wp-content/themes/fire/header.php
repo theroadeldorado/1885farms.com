@@ -44,7 +44,7 @@
             'menu_id'         => 'primary-menu',
             'menu_class'      => 'list-none flex justify-end items-center',
             'list_item_class' => 'mx-4',
-            'link_class'      => 'no-underline uppercase text-white text-14 hover:underline transform scale-100',
+            'link_class'      => 'no-underline uppercase text-white text-14 font-bold-hover transform scale-100 duration-200 block hover:scale-110',
             )
           );
         ?>

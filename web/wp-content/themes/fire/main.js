@@ -1,13 +1,9 @@
-import $ from "jquery";
-import "@base/polyfills";
-import "alpinejs/dist/alpine-ie11";
-import balanceText from "balance-text";
-import {
-  FireDetect,
-  FireComponentRecord,
-  FireLazyLoader,
-  FireHelpers,
-} from "@base";
+import $ from 'jquery';
+import '@base/polyfills';
+import 'alpinejs/dist/alpine-ie11';
+import balanceText from 'balance-text';
+import 'slick-carousel';
+import { FireDetect, FireComponentRecord, FireLazyLoader, FireHelpers } from '@base';
 
 const detect = new FireDetect();
 const componentRecord = new FireComponentRecord();
@@ -29,10 +25,7 @@ const onPageReady = () => {
   componentRecord.registerAllComponents();
   FireHelpers.moveBootstrapModalsToBody();
 
-  if (
-    detect.touch &&
-    (detect.platform === "iPhone" || detect.platform === "iPad")
-  ) {
+  if (detect.touch && (detect.platform === 'iPhone' || detect.platform === 'iPad')) {
     FireHelpers.iOSFixDoubleTap();
   }
 

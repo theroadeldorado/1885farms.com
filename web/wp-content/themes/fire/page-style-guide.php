@@ -67,15 +67,41 @@
   <hr>
 
   <div class="flex flex-wrap items-center p-10">
-    <button type="button" class="mr-4 button button-white">watch more</button>
-    <button type="button" class="mr-4 button button-primary">watch more</button>
-    <button type="button" class="mr-4 button button-primary button-lg">watch more</button>
+    <button type="button" class="mr-4 button button-primary">Primary Button</button>
+    <button type="button" class="mr-4 button button-primary">Primary Button</button>
+    <button type="button" class="mr-4 button button-primary-outlined button-primary">Primary Button</button>
+    <button type="button" class="mr-4 button button-primary-outlined button-primary">Primary Button</button>
+  </div>
+  <div class="flex flex-wrap items-center p-10">
+    <button type="button" class="mr-4 button button-secondary">Secondary Button</button>
+    <button type="button" class="mr-4 button button-secondary">Secondary Button</button>
+    <button type="button" class="mr-4 button button-secondary-outlined button-secondary">Secondary Button</button>
+    <button type="button" class="mr-4 button button-secondary-outlined button-secondary">Secondary Button</button>
+  </div>
+  <div class="flex flex-wrap items-center p-10">
+    <button type="button" class="mr-4 button button-accent">Accent Button</button>
+    <button type="button" class="mr-4 button button-accent">Accent Button</button>
+    <button type="button" class="mr-4 button button-accent-outlined button-accent">Accent Button</button>
+    <button type="button" class="mr-4 button button-accent-outlined button-accent">Accent Button</button>
   </div>
 
   <div class="flex flex-wrap items-center p-10 bg-black">
-    <button type="button" class="mr-4 button button-white">watch more</button>
-    <button type="button" class="mr-4 button button-primary">watch more</button>
-    <button type="button" class="mr-4 button button-primary button-lg">watch more</button>
+    <button type="button" class="mr-4 button button-primary">Primary Button</button>
+    <button type="button" class="mr-4 button button-primary">Primary Button</button>
+    <button type="button" class="mr-4 button button-primary-outlined button-primary">Primary Button</button>
+    <button type="button" class="mr-4 button button-primary-outlined button-primary">Primary Button</button>
+  </div>
+  <div class="flex flex-wrap items-center p-10 bg-black">
+    <button type="button" class="mr-4 button button-secondary">Secondary Button</button>
+    <button type="button" class="mr-4 button button-secondary">Secondary Button</button>
+    <button type="button" class="mr-4 button button-secondary-outlined button-secondary">Secondary Button</button>
+    <button type="button" class="mr-4 button button-secondary-outlined button-secondary">Secondary Button</button>
+  </div>
+  <div class="flex flex-wrap items-center p-10 bg-black">
+    <button type="button" class="mr-4 button button-accent">Accent Button</button>
+    <button type="button" class="mr-4 button button-accent">Accent Button</button>
+    <button type="button" class="mr-4 button button-accent-outlined button-accent">Accent Button</button>
+    <button type="button" class="mr-4 button button-accent-outlined button-accent">Accent Button</button>
   </div>
 
   <hr>

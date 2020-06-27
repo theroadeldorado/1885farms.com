@@ -625,6 +625,125 @@ video {
   }
 }
 
+/* Slider */
+
+.slick-slider
+{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus
+{
+  outline: none;
+}
+
+.slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after
+{
+  display: table;
+  content: '';
+}
+
+.slick-track:after
+{
+  clear: both;
+}
+
+.slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.slick-slide
+{
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+
+.slick-slide img
+{
+  display: block;
+}
+
+.slick-slide.slick-loading img
+{
+  display: none;
+}
+
+.slick-slide.dragging img
+{
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide
+{
+  display: block;
+}
+
+.slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide
+{
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 /* base */
 
 /* src is relative to `main.css` */
@@ -818,6 +937,24 @@ hr {
   padding-right: 0;
 }
 
+.border-bottom {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.border-bottom:after {
+  content: '';
+  display: block;
+  width: 6rem;
+  height: 0.25rem;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --bg-opacity: .30;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
 /*! purgecss end ignore */
 
 /*! purgecss start ignore */
@@ -843,24 +980,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", Arial, sans-serif;
   font-family: "PlayfairDisplay", serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: 3rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 h2 {
   font-size: 2.125rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.75rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 h4 {
@@ -878,19 +1015,28 @@ h6 {
   line-height: 1.5;
 }
 
+.heading-fancy {
+  font-style: italic;
+  --text-opacity: 1;
+  color: #e1c2b8;
+  color: rgba(225, 194, 184, var(--text-opacity));
+  text-transform: none;
+  font-weight: 400;
+}
+
 .heading-1 {
   font-size: 3rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .heading-2 {
   font-size: 2.125rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .heading-3 {
   font-size: 1.75rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .heading-4 {
@@ -930,11 +1076,12 @@ button:focus {
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-radius: 0.25rem;
+  display: inline-block;
   font-size: 0.875rem;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
+  text-transform: uppercase;
   transition-property: all;
   transition-duration: 200ms;
   cursor: pointer;
@@ -945,9 +1092,23 @@ button:focus {
 }
 
 .button-primary {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
   --bg-opacity: 1;
   background-color: #4a534b;
   background-color: rgba(74, 83, 75, var(--bg-opacity));
+}
+
+.button-primary-outlined {
+  --border-opacity: 1;
+  border-color: #4a534b;
+  border-color: rgba(74, 83, 75, var(--border-opacity));
+  border-width: 1px;
+  --text-opacity: 1;
+  color: #4a534b;
+  color: rgba(74, 83, 75, var(--text-opacity));
+  background-color: transparent;
 }
 
 .button-primary:hover,
@@ -955,10 +1116,108 @@ button:focus {
   --bg-opacity: 1;
   background-color: #333f34;
   background-color: rgba(51, 63, 52, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.button-primary:hover-outlined, .button-primary:active-outlined {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #4a534b;
+  background-color: rgba(74, 83, 75, var(--bg-opacity));
 }
 
 .button-primary:focus {
   box-shadow: 0px 0px 0px 2px #333f34;
+}
+
+.button-secondary {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #455059;
+  background-color: rgba(69, 80, 89, var(--bg-opacity));
+}
+
+.button-secondary-outlined {
+  --border-opacity: 1;
+  border-color: #455059;
+  border-color: rgba(69, 80, 89, var(--border-opacity));
+  border-width: 1px;
+  --text-opacity: 1;
+  color: #455059;
+  color: rgba(69, 80, 89, var(--text-opacity));
+  background-color: transparent;
+}
+
+.button-secondary:hover,
+    .button-secondary:active {
+  --bg-opacity: 1;
+  background-color: #242a30;
+  background-color: rgba(36, 42, 48, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.button-secondary:hover-outlined, .button-secondary:active-outlined {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #455059;
+  background-color: rgba(69, 80, 89, var(--bg-opacity));
+}
+
+.button-secondary:focus {
+  box-shadow: 0px 0px 0px 2px #242a30;
+}
+
+.button-accent {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #e1c2b8;
+  background-color: rgba(225, 194, 184, var(--bg-opacity));
+}
+
+.button-accent-outlined {
+  --border-opacity: 1;
+  border-color: #e1c2b8;
+  border-color: rgba(225, 194, 184, var(--border-opacity));
+  border-width: 1px;
+  --text-opacity: 1;
+  color: #e1c2b8;
+  color: rgba(225, 194, 184, var(--text-opacity));
+  background-color: transparent;
+}
+
+.button-accent:hover,
+    .button-accent:active {
+  --bg-opacity: 1;
+  background-color: #c2a196;
+  background-color: rgba(194, 161, 150, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.button-accent:hover-outlined, .button-accent:active-outlined {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #e1c2b8;
+  background-color: rgba(225, 194, 184, var(--bg-opacity));
+}
+
+.button-accent:focus {
+  box-shadow: 0px 0px 0px 2px #c2a196;
 }
 
 /*! purgecss end ignore */
@@ -5337,27 +5596,27 @@ a:focus {
 
 .text-28 {
   font-size: 1.75rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .text-34 {
   font-size: 2.125rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .text-38 {
   font-size: 2.375rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .text-42 {
   font-size: 2.625rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .text-48 {
   font-size: 3rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .leading-3 {
@@ -22084,27 +22343,27 @@ a:focus {
 
   .smd\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .smd\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .smd\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .smd\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .smd\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .smd\:leading-3 {
@@ -38812,27 +39071,27 @@ a:focus {
 
   .mdd\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .mdd\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .mdd\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .mdd\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .mdd\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .mdd\:leading-3 {
@@ -55540,27 +55799,27 @@ a:focus {
 
   .lgd\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lgd\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lgd\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lgd\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lgd\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lgd\:leading-3 {
@@ -72268,27 +72527,27 @@ a:focus {
 
   .xld\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xld\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xld\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xld\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xld\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xld\:leading-3 {
@@ -88996,27 +89255,27 @@ a:focus {
 
   .sm\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .sm\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .sm\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .sm\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .sm\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .sm\:leading-3 {
@@ -105724,27 +105983,27 @@ a:focus {
 
   .md\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .md\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .md\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .md\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .md\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .md\:leading-3 {
@@ -122452,27 +122711,27 @@ a:focus {
 
   .lg\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lg\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lg\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lg\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lg\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .lg\:leading-3 {
@@ -139180,27 +139439,27 @@ a:focus {
 
   .xl\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xl\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xl\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xl\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xl\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .xl\:leading-3 {
@@ -155908,27 +156167,27 @@ a:focus {
 
   .ie\:text-28 {
     font-size: 1.75rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .ie\:text-34 {
     font-size: 2.125rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .ie\:text-38 {
     font-size: 2.375rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .ie\:text-42 {
     font-size: 2.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .ie\:text-48 {
     font-size: 3rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 
   .ie\:leading-3 {

@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import { FireHelpers } from '@base';
+import { CopyWithMedia } from '../../../templates/components/copy-with-media/copy-with-media';
 
 /**
  * @type class
@@ -17,8 +18,8 @@ export class FireComponentRecord {
 
     // init correct component class
     switch (name) {
-      case 'component-name':
-        // new ComponentName(id).init();
+      case 'copy-with-media':
+        new CopyWithMedia(id).init();
         break;
       default:
         break;
