@@ -57,7 +57,7 @@ hr {
 
   &:after {
     content: '';
-    @apply block w-24 h-1 bg-white bg-opacity-30 mt-12 mb-5;
+    @apply block w-24 h-1 bg-white bg-opacity-30 mt-12 mb-10;
   }
 }
 

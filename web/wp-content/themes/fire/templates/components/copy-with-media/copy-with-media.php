@@ -19,26 +19,14 @@
     <div class="flex-shrink-0 w-1/2 py-16 text-white <?php echo $image_position === 'right' ? ' pr-16 ' : ' pl-16 ';?>">
       <?php echo $copy; ?>
     </div>
-    <div class="relative <?php echo $image_position === 'right' ? ' break-container-right ' : ' break-container-left';?>">
+    <div class="<?php echo $image_position === 'right' ? ' break-container-right ' : ' break-container-left';?>">
       <?php
       if( $gallery ): ?>
-        <div class="h-full w-1/2vw" data-element="slider">
+        <div class="relative h-full w-1/2vw" data-element="slider">
           <?php foreach( $gallery as $image ):
             $image_alt = get_post_meta($image['ID'] , '_wp_attachment_image_alt', true);
           ?>
-
-              <img class="object-cover w-full h-full" src="<?php print aq_resize($image['url'], 1200, 800, true, true, true); ?>" alt="<?php print $image_alt; ?>">
-
-
-              <!-- <div
-                role="img"
-                aria-label="<?php print $image_alt; ?>"
-                class="h-full bg-center bg-cover w-1/2vw lozad"
-                data-background-image="<?php print aq_resize($image['url'], 1920, 600, true); ?>"
-              >
-              </div> -->
-
-
+            <img class="object-cover w-full h-full" src="<?php print aq_resize($image['url'], 1200, 800, true, true, true); ?>" alt="<?php print $image_alt; ?>">
           <?php
           endforeach;?>
         </div>

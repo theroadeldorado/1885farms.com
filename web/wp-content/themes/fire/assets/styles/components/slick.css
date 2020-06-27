@@ -1,0 +1,33 @@
+.slick {
+  &-list {
+    @apply h-full;
+  }
+  &-track {
+    @apply h-full;
+  }
+  &-slide {
+    @apply h-full;
+
+    > div {
+      @apply h-full;
+    }
+  }
+
+  &-dots {
+    @apply flex justify-center items-center absolute bottom-0 w-full py-4;
+
+    li {
+      @apply mx-3 block;
+
+      button {
+        text-indent: -999em;
+        @apply h-4 w-4 rounded-full bg-secondary-500 border-2 border-white shadow-500;
+      }
+      &.slick-active {
+        button {
+          @apply bg-accent-500;
+        }
+      }
+    }
+  }
+}
