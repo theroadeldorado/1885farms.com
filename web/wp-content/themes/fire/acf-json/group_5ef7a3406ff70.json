@@ -19,6 +19,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_5ef7a4d6044b2",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ef7a355f39af",
             "label": "Columns",
             "name": "columns",
@@ -44,8 +63,8 @@
         },
         {
             "key": "field_5ef7a38ef39b0",
-            "label": "List Itmes",
-            "name": "list_itmes",
+            "label": "List Items",
+            "name": "list_items",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -137,5 +156,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1593287624
+    "modified": 1593290001
 }

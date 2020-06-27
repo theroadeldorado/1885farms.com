@@ -145,6 +145,9 @@ module.exports = {
       maxHeight: {
         0: '0',
       },
+      maxWidth: {
+        '800': '800px',
+      },
       width: {
         unset: 'unset',
         '1/2': '50%',

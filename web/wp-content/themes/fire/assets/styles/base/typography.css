@@ -1,7 +1,7 @@
 /*! purgecss start ignore */
 html,
 body {
-  @apply font-body text-gray-900 text-16 leading-normal font-normal antialiased;
+  @apply font-body text-secondary-700 text-16 leading-normal font-normal antialiased;
   text-rendering: optimizeLegibility;
 }
 
