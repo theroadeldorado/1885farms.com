@@ -1,22 +1,31 @@
 <?php
   $columns = get_sub_field('columns');
   $title = get_sub_field('title');
-  $grid_cols = '';
-  $grid_cols = $columns === '1' ? 'grid-cols-1' : '';
-  $grid_cols = $columns === '2' ? 'grid-cols-2' : '';
-  $grid_cols = $columns === '3' ? 'grid-cols-3' : '';
-  $grid_cols = $columns === '4' ? 'grid-cols-4' : '';
+
+  if($columns === '1'):
+    $grid_cols = 'grid-cols-1';
+  elseif($columns === '2'):
+    $grid_cols = 'grid-cols-2';
+  elseif($columns === '3'):
+    $grid_cols = 'grid-cols-3';
+  else:
+    $grid_cols = 'grid-cols-4';
+  endif;
+
   $section->add_classes([
     'relative bg-white overflow-hidden'
   ]);
 ?>
 
 <?php $section->start(); ?>
-  <div class="container container-small">
-    <h2 class="my-12 italic font-normal tracking-tight text-center normal-case text-48 text-secondary-500"><?php echo $title;?></h2>
+
+  <div class="container py-12 container-small">
+    <?php if($title):?>
+      <h2 class="mb-12 italic font-normal tracking-tight text-center normal-case text-48 text-secondary-500"><?php echo $title;?></h2>
+    <?php endif; ?>
     <?php
     if( have_rows('list_items') ):
-      echo '<div class="grid '.$grid_cols.' gap-8 row-gap-2 mx-auto mb-12 list">';
+      echo '<div class="grid '.$grid_cols.' gap-8 row-gap-2 mx-auto mb-4 list">';
         while ( have_rows('list_items') ) : the_row(); ?>
           <div class="flex list-item">
             <span class="mr-2 transform scale-90 text-accent-500">

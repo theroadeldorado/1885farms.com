@@ -21,9 +21,7 @@ get_header();
     <?php
     while ( have_posts() ) :
       the_post();
-        $image_url = get_the_post_thumbnail_url();
-        $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
-        ?>
+      ?>
 
       <?php get_template_part( 'templates/content', 'page' );
 

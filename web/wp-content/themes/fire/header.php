@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="relative site">
-  <header x-data="" class="fixed top-0 w-full site-header">
+  <header x-data="" class="fixed top-0 z-50 w-full site-header">
     <!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> -->
 
     <div class="container flex items-center justify-between my-4 text-white">

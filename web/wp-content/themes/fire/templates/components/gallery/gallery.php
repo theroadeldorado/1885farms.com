@@ -17,7 +17,7 @@
         foreach( $gallery as $image ):
           $image_alt = get_post_meta($image['ID'] , '_wp_attachment_image_alt', true);?>
           <div class="relative aspect-ratio-4/3">
-            <img class="absolute w-full h-full bg-center bg-cover" src="<?php print aq_resize($image['url'], 600, 600, true, true, true); ?>" alt="<?php print $image_alt; ?>">
+            <img class="absolute object-cover w-full h-full" src="<?php print aq_resize($image['url'], 600, 600, true, true, true); ?>" alt="<?php print $image_alt; ?>">
           </div>
         <?php
         endforeach;?>
