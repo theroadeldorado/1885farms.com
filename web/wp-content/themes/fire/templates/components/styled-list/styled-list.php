@@ -3,13 +3,13 @@
   $title = get_sub_field('title');
 
   if($columns === '1'):
-    $grid_cols = 'grid-cols-1';
+    $grid_cols = 'md:grid-cols-1';
   elseif($columns === '2'):
-    $grid_cols = 'grid-cols-2';
+    $grid_cols = 'md:grid-cols-2';
   elseif($columns === '3'):
-    $grid_cols = 'grid-cols-3';
+    $grid_cols = 'md:grid-cols-3';
   else:
-    $grid_cols = 'grid-cols-4';
+    $grid_cols = 'md:grid-cols-4';
   endif;
 
   $section->add_classes([
@@ -25,7 +25,7 @@
     <?php endif; ?>
     <?php
     if( have_rows('list_items') ):
-      echo '<div class="grid '.$grid_cols.' gap-8 row-gap-2 mx-auto mb-4 list">';
+      echo '<div class="grid grid-cols-2 '.$grid_cols.' gap-8 row-gap-2 mx-auto mb-4 list">';
         while ( have_rows('list_items') ) : the_row(); ?>
           <div class="flex list-item">
             <span class="mr-2 transform scale-90 text-accent-500">

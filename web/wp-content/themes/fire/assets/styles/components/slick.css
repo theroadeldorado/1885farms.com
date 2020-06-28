@@ -17,7 +17,11 @@
     @apply flex justify-center items-center absolute bottom-0 w-full py-4;
 
     li {
-      @apply mx-3 block;
+      @apply mx-1 block;
+
+      @screen md {
+        @apply mx-2;
+      }
 
       button {
         text-indent: -999em;

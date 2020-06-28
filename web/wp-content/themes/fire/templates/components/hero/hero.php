@@ -18,7 +18,7 @@
     <div
       role="img"
       aria-label="<?php echo $image_alt; ?>"
-      class="absolute inset-0 bg-center bg-cover lozad opacity-70"
+      class="absolute inset-0 bg-center bg-cover lozad opacity-60"
       data-background-image="<?php echo aq_resize($image['url'], 1920, 600, true, true, true); ?>"
     ></div>
   </div>

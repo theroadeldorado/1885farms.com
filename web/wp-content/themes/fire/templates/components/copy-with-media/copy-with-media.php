@@ -15,18 +15,18 @@
 
 <?php $section->start(); ?>
 
-  <div class="container flex flex-wrap md:flex-no-wrap <?php echo $image_position === 'right' ? '' : ' flex-row-reverse ';?> ">
+  <div class="container block md:flex <?php echo $image_position === 'right' ? '' : ' flex-row-reverse ';?> ">
     <div class="flex-shrink-0 w-full md:w-1/2 py-8 md:py-16 text-white <?php echo $image_position === 'right' ? ' pr-10 md:pr-16 ' : ' pr-10 md:pl-16 ';?>">
       <?php echo $copy; ?>
     </div>
-    <div class="<?php echo $image_position === 'right' ? 'smd:-mx-4 md:break-container-right ' : ' md:break-container-left';?>">
+    <div class="smd:-mx-4 <?php echo $image_position === 'right' ? ' md:break-container-right ' : ' md:break-container-left';?>">
       <?php
       if( $gallery ): ?>
-        <div class="relative w-full h-full md:w-1/2vw" data-element="slider">
+        <div class="relative w-full h-64 md:h-full md:w-1/2vw" data-element="slider">
           <?php foreach( $gallery as $image ):
             $image_alt = get_post_meta($image['ID'] , '_wp_attachment_image_alt', true);
           ?>
-            <img class="object-cover w-full h-full" src="<?php print aq_resize($image['url'], 1200, 800, true, true, true); ?>" alt="<?php print $image_alt; ?>">
+            <img class="w-full h-auto md:object-cover md:h-full" src="<?php print aq_resize($image['url'], 1200, 800, true, true, true); ?>" alt="<?php print $image_alt; ?>">
           <?php
           endforeach;?>
         </div>
