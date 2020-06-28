@@ -59,9 +59,17 @@ hr {
 .border-bottom {
   @apply mb-4 pb-4;
 
+  @screen md {
+    @apply mb-4 pb-4;
+  }
+
   &:after {
     content: '';
-    @apply block w-24 h-1 bg-white bg-opacity-30 mt-12 mb-10;
+    @apply block w-24 h-1 bg-white bg-opacity-30 mb-0 mt-8;
+
+    @screen md {
+      @apply mb-10 mt-12;
+    }
   }
 }
 
