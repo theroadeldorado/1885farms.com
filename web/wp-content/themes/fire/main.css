@@ -2,6 +2,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import './node_modules/slick-carousel/slick/slick';
+@import './node_modules/aos/dist/aos.css';
 
 /* base */
 @import './assets/styles/base/fonts';

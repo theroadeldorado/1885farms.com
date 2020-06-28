@@ -38,6 +38,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "alpinejs": "^2.2.5",
+    "aos": "^3.0.0-beta.6",
     "balance-text": "^3.3.0",
     "core-js": "^3.6.4",
     "intersection-observer": "^0.7.0",

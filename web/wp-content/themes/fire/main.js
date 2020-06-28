@@ -3,6 +3,7 @@ import '@base/polyfills';
 import 'alpinejs/dist/alpine-ie11';
 import balanceText from 'balance-text';
 import 'slick-carousel';
+import AOS from 'aos';
 import { FireDetect, FireComponentRecord, FireLazyLoader, FireHelpers } from '@base';
 
 const detect = new FireDetect();
@@ -30,6 +31,8 @@ const onPageReady = () => {
   }
 
   balanceText();
+
+  AOS.init();
 };
 
 // fire all scripts
