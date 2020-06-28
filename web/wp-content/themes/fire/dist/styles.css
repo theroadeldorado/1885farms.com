@@ -11320,6 +11320,13 @@ a:focus {
   left: 16rem;
 }
 
+.inset-112 {
+  top: 28rem;
+  right: 28rem;
+  bottom: 28rem;
+  left: 28rem;
+}
+
 .inset-auto {
   top: auto;
   right: auto;
@@ -11811,6 +11818,16 @@ a:focus {
 .inset-x-64 {
   right: 16rem;
   left: 16rem;
+}
+
+.inset-y-112 {
+  top: 28rem;
+  bottom: 28rem;
+}
+
+.inset-x-112 {
+  right: 28rem;
+  left: 28rem;
 }
 
 .inset-y-auto {
@@ -12553,6 +12570,22 @@ a:focus {
 
 .left-64 {
   left: 16rem;
+}
+
+.top-112 {
+  top: 28rem;
+}
+
+.right-112 {
+  right: 28rem;
+}
+
+.bottom-112 {
+  bottom: 28rem;
+}
+
+.left-112 {
+  left: 28rem;
 }
 
 .top-auto {
@@ -14626,6 +14659,10 @@ a:focus {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-112 {
+  width: 28rem;
 }
 
 .w-auto {
@@ -28075,6 +28112,13 @@ a:focus {
     left: 16rem;
   }
 
+  .smd\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .smd\:inset-auto {
     top: auto;
     right: auto;
@@ -28566,6 +28610,16 @@ a:focus {
   .smd\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .smd\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .smd\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .smd\:inset-y-auto {
@@ -29308,6 +29362,22 @@ a:focus {
 
   .smd\:left-64 {
     left: 16rem;
+  }
+
+  .smd\:top-112 {
+    top: 28rem;
+  }
+
+  .smd\:right-112 {
+    right: 28rem;
+  }
+
+  .smd\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .smd\:left-112 {
+    left: 28rem;
   }
 
   .smd\:top-auto {
@@ -31381,6 +31451,10 @@ a:focus {
 
   .smd\:w-64 {
     width: 16rem;
+  }
+
+  .smd\:w-112 {
+    width: 28rem;
   }
 
   .smd\:w-auto {
@@ -44811,6 +44885,13 @@ a:focus {
     left: 16rem;
   }
 
+  .mdd\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .mdd\:inset-auto {
     top: auto;
     right: auto;
@@ -45302,6 +45383,16 @@ a:focus {
   .mdd\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .mdd\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .mdd\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .mdd\:inset-y-auto {
@@ -46044,6 +46135,22 @@ a:focus {
 
   .mdd\:left-64 {
     left: 16rem;
+  }
+
+  .mdd\:top-112 {
+    top: 28rem;
+  }
+
+  .mdd\:right-112 {
+    right: 28rem;
+  }
+
+  .mdd\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .mdd\:left-112 {
+    left: 28rem;
   }
 
   .mdd\:top-auto {
@@ -48117,6 +48224,10 @@ a:focus {
 
   .mdd\:w-64 {
     width: 16rem;
+  }
+
+  .mdd\:w-112 {
+    width: 28rem;
   }
 
   .mdd\:w-auto {
@@ -61547,6 +61658,13 @@ a:focus {
     left: 16rem;
   }
 
+  .lgd\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .lgd\:inset-auto {
     top: auto;
     right: auto;
@@ -62038,6 +62156,16 @@ a:focus {
   .lgd\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .lgd\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .lgd\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .lgd\:inset-y-auto {
@@ -62780,6 +62908,22 @@ a:focus {
 
   .lgd\:left-64 {
     left: 16rem;
+  }
+
+  .lgd\:top-112 {
+    top: 28rem;
+  }
+
+  .lgd\:right-112 {
+    right: 28rem;
+  }
+
+  .lgd\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .lgd\:left-112 {
+    left: 28rem;
   }
 
   .lgd\:top-auto {
@@ -64853,6 +64997,10 @@ a:focus {
 
   .lgd\:w-64 {
     width: 16rem;
+  }
+
+  .lgd\:w-112 {
+    width: 28rem;
   }
 
   .lgd\:w-auto {
@@ -78283,6 +78431,13 @@ a:focus {
     left: 16rem;
   }
 
+  .xld\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .xld\:inset-auto {
     top: auto;
     right: auto;
@@ -78774,6 +78929,16 @@ a:focus {
   .xld\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .xld\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .xld\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .xld\:inset-y-auto {
@@ -79516,6 +79681,22 @@ a:focus {
 
   .xld\:left-64 {
     left: 16rem;
+  }
+
+  .xld\:top-112 {
+    top: 28rem;
+  }
+
+  .xld\:right-112 {
+    right: 28rem;
+  }
+
+  .xld\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .xld\:left-112 {
+    left: 28rem;
   }
 
   .xld\:top-auto {
@@ -81589,6 +81770,10 @@ a:focus {
 
   .xld\:w-64 {
     width: 16rem;
+  }
+
+  .xld\:w-112 {
+    width: 28rem;
   }
 
   .xld\:w-auto {
@@ -95019,6 +95204,13 @@ a:focus {
     left: 16rem;
   }
 
+  .sm\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .sm\:inset-auto {
     top: auto;
     right: auto;
@@ -95510,6 +95702,16 @@ a:focus {
   .sm\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .sm\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .sm\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .sm\:inset-y-auto {
@@ -96252,6 +96454,22 @@ a:focus {
 
   .sm\:left-64 {
     left: 16rem;
+  }
+
+  .sm\:top-112 {
+    top: 28rem;
+  }
+
+  .sm\:right-112 {
+    right: 28rem;
+  }
+
+  .sm\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .sm\:left-112 {
+    left: 28rem;
   }
 
   .sm\:top-auto {
@@ -98325,6 +98543,10 @@ a:focus {
 
   .sm\:w-64 {
     width: 16rem;
+  }
+
+  .sm\:w-112 {
+    width: 28rem;
   }
 
   .sm\:w-auto {
@@ -111755,6 +111977,13 @@ a:focus {
     left: 16rem;
   }
 
+  .md\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .md\:inset-auto {
     top: auto;
     right: auto;
@@ -112246,6 +112475,16 @@ a:focus {
   .md\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .md\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .md\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .md\:inset-y-auto {
@@ -112988,6 +113227,22 @@ a:focus {
 
   .md\:left-64 {
     left: 16rem;
+  }
+
+  .md\:top-112 {
+    top: 28rem;
+  }
+
+  .md\:right-112 {
+    right: 28rem;
+  }
+
+  .md\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .md\:left-112 {
+    left: 28rem;
   }
 
   .md\:top-auto {
@@ -115061,6 +115316,10 @@ a:focus {
 
   .md\:w-64 {
     width: 16rem;
+  }
+
+  .md\:w-112 {
+    width: 28rem;
   }
 
   .md\:w-auto {
@@ -128491,6 +128750,13 @@ a:focus {
     left: 16rem;
   }
 
+  .lg\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .lg\:inset-auto {
     top: auto;
     right: auto;
@@ -128982,6 +129248,16 @@ a:focus {
   .lg\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .lg\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .lg\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .lg\:inset-y-auto {
@@ -129724,6 +130000,22 @@ a:focus {
 
   .lg\:left-64 {
     left: 16rem;
+  }
+
+  .lg\:top-112 {
+    top: 28rem;
+  }
+
+  .lg\:right-112 {
+    right: 28rem;
+  }
+
+  .lg\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .lg\:left-112 {
+    left: 28rem;
   }
 
   .lg\:top-auto {
@@ -131797,6 +132089,10 @@ a:focus {
 
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-112 {
+    width: 28rem;
   }
 
   .lg\:w-auto {
@@ -145227,6 +145523,13 @@ a:focus {
     left: 16rem;
   }
 
+  .xl\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .xl\:inset-auto {
     top: auto;
     right: auto;
@@ -145718,6 +146021,16 @@ a:focus {
   .xl\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .xl\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .xl\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .xl\:inset-y-auto {
@@ -146460,6 +146773,22 @@ a:focus {
 
   .xl\:left-64 {
     left: 16rem;
+  }
+
+  .xl\:top-112 {
+    top: 28rem;
+  }
+
+  .xl\:right-112 {
+    right: 28rem;
+  }
+
+  .xl\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .xl\:left-112 {
+    left: 28rem;
   }
 
   .xl\:top-auto {
@@ -148533,6 +148862,10 @@ a:focus {
 
   .xl\:w-64 {
     width: 16rem;
+  }
+
+  .xl\:w-112 {
+    width: 28rem;
   }
 
   .xl\:w-auto {
@@ -161963,6 +162296,13 @@ a:focus {
     left: 16rem;
   }
 
+  .ie\:inset-112 {
+    top: 28rem;
+    right: 28rem;
+    bottom: 28rem;
+    left: 28rem;
+  }
+
   .ie\:inset-auto {
     top: auto;
     right: auto;
@@ -162454,6 +162794,16 @@ a:focus {
   .ie\:inset-x-64 {
     right: 16rem;
     left: 16rem;
+  }
+
+  .ie\:inset-y-112 {
+    top: 28rem;
+    bottom: 28rem;
+  }
+
+  .ie\:inset-x-112 {
+    right: 28rem;
+    left: 28rem;
   }
 
   .ie\:inset-y-auto {
@@ -163196,6 +163546,22 @@ a:focus {
 
   .ie\:left-64 {
     left: 16rem;
+  }
+
+  .ie\:top-112 {
+    top: 28rem;
+  }
+
+  .ie\:right-112 {
+    right: 28rem;
+  }
+
+  .ie\:bottom-112 {
+    bottom: 28rem;
+  }
+
+  .ie\:left-112 {
+    left: 28rem;
   }
 
   .ie\:top-auto {
@@ -165269,6 +165635,10 @@ a:focus {
 
   .ie\:w-64 {
     width: 16rem;
+  }
+
+  .ie\:w-112 {
+    width: 28rem;
   }
 
   .ie\:w-auto {

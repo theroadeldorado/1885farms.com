@@ -153,6 +153,7 @@ module.exports = {
         '1/2': '50%',
         '1/2vw': '50vw',
         '-1/2vw': '-50vw',
+        '112': '28rem',
       },
       height: {
         unset: 'unset',

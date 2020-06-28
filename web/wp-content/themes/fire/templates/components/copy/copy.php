@@ -7,7 +7,7 @@
 ?>
 
 <?php $section->start(); ?>
-  <div class="container py-12 container-small">
+  <div class="container py-14 container-small">
     <?php echo $copy; ?>
   </div>
 <?php $section->end(); ?>
