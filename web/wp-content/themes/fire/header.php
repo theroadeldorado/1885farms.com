@@ -97,11 +97,6 @@
           isOpen: false,
           toggle() {
             this.isOpen = !this.isOpen;
-            // if(this.isOpen === true){
-            //   document.body.classList.add('overflow-hidden', 'h-full', 'fixed', 'w-full', 'nav-open');
-            // } else{
-            //   document.body.classList.remove('overflow-hidden', 'h-full', 'fixed', 'w-full', 'nav-open');
-            // }
           }
         }
       }
