@@ -7,7 +7,7 @@
   $grid_cols = $columns === '3' ? 'grid-cols-3' : '';
   $grid_cols = $columns === '4' ? 'grid-cols-4' : '';
   $section->add_classes([
-    'relative bg-white'
+    'relative bg-white overflow-hidden'
   ]);
 ?>
 
