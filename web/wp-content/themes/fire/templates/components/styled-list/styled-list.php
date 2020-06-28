@@ -12,11 +12,11 @@
 ?>
 
 <?php $section->start(); ?>
-  <div class="container">
+  <div class="container container-small">
     <h2 class="my-12 italic font-normal tracking-tight text-center normal-case text-48 text-secondary-500"><?php echo $title;?></h2>
     <?php
     if( have_rows('list_items') ):
-      echo '<div class="grid '.$grid_cols.' gap-8 row-gap-2 mx-auto mb-12 list max-w-800">';
+      echo '<div class="grid '.$grid_cols.' gap-8 row-gap-2 mx-auto mb-12 list">';
         while ( have_rows('list_items') ) : the_row(); ?>
           <div class="flex list-item">
             <span class="mr-2 transform scale-90 text-accent-500">

@@ -1,9 +1,9 @@
 {
-    "key": "group_5ef7f5a7d7908",
-    "title": "Gallery",
+    "key": "group_5ef7fb0b727a8",
+    "title": "Copy",
     "fields": [
         {
-            "key": "field_5ef7f5aca9a91",
+            "key": "field_5ef7fb0b82c33",
             "label": "Content",
             "name": "",
             "type": "tab",
@@ -19,10 +19,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5ef7f5b8a9a92",
-            "label": "Title",
-            "name": "title",
-            "type": "text",
+            "key": "field_5ef7fb0b82c3a",
+            "label": "Copy",
+            "name": "copy",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -32,40 +32,13 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
-            "key": "field_5ef7f5bfa9a93",
-            "label": "Gallery",
-            "name": "gallery",
-            "type": "gallery",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "insert": "append",
-            "library": "all",
-            "min": "",
-            "max": "",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5ef7f5c9a9a94",
+            "key": "field_5ef7fb0b82c45",
             "label": "Settings",
             "name": "",
             "type": "tab",
@@ -81,7 +54,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5ef7f5d9a9a95",
+            "key": "field_5ef7fb0b82c54",
             "label": "Settings",
             "name": "settings",
             "type": "clone",
@@ -119,5 +92,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1593311585
+    "modified": 1593311557
 }

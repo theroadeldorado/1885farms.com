@@ -39,7 +39,7 @@ h6 {
 }
 
 .heading-fancy {
-  @apply italic text-accent-500 normal-case font-normal -my-2;
+  @apply italic text-accent-500 normal-case font-normal -my-1;
 }
 
 .heading-1 {

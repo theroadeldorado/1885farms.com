@@ -35,6 +35,10 @@ hr {
 }
 
 @responsive {
+  .container-small {
+    @apply max-w-800;
+  }
+
   .break-container {
     &-right {
       margin-right: calc(50% - 50vw);
