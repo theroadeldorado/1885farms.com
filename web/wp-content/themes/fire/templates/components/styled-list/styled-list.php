@@ -21,13 +21,13 @@
 
   <div class="container py-12 container-small">
     <?php if($title):?>
-      <h2 class="mb-12 italic font-normal tracking-tight text-center normal-case text-48 text-secondary-500"><?php echo $title;?></h2>
+      <h2 class="mb-12 italic font-normal tracking-tight text-center normal-case text-48 text-secondary-500" data-aos='fade-up'><?php echo $title;?></h2>
     <?php endif; ?>
     <?php
     if( have_rows('list_items') ):
       echo '<div class="grid grid-cols-2 '.$grid_cols.' gap-8 row-gap-2 mx-auto mb-4 list">';
         while ( have_rows('list_items') ) : the_row(); ?>
-          <div class="flex list-item">
+          <div class="flex list-item" data-aos='fade-left'>
             <span class="mr-2 transform scale-90 text-accent-500">
               <?php include(get_template_directory() . '/assets/media/svgs/icon--flower.svg'); ?>
             </span>

@@ -16,7 +16,7 @@
 <?php $section->start(); ?>
 
   <div class="container block md:flex <?php echo $image_position === 'right' ? '' : ' flex-row-reverse ';?> ">
-    <div class="flex-shrink-0 w-full md:w-1/2 py-8 md:py-16 text-white <?php echo $image_position === 'right' ? ' pr-10 md:pr-16 ' : ' pr-10 md:pl-16 ';?>">
+    <div class="flex-shrink-0 w-full md:w-1/2 py-8 md:py-16 text-white <?php echo $image_position === 'right' ? ' pr-10 md:pr-16 ' : ' pr-10 md:pl-16 ';?>" <?php echo $image_position === 'right' ? "data-aos='fade-right'" : "data-aos='fade-left'" ;?>>
       <?php echo $copy; ?>
     </div>
     <div class="smd:-mx-4 <?php echo $image_position === 'right' ? ' md:break-container-right ' : ' md:break-container-left';?>">
