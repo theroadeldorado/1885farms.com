@@ -32,9 +32,9 @@ const onPageReady = () => {
 
   balanceText();
 
-  if (FireHelpers.isDesktop()) {
-    AOS.init();
-  }
+  // if (FireHelpers.isDesktop()) {
+  //   AOS.init();
+  // }
 };
 
 // fire all scripts

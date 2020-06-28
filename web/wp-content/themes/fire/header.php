@@ -88,9 +88,9 @@
     <script>
       const header = document.querySelector('.site-header');
 
-      document.addEventListener('scroll', () => {
-        header.classList.add('bg-secondary-700', 'lg:bg-opacity-80', header.scrollTop > 200);
-      });
+      // document.addEventListener('scroll', () => {
+      //   header.classList.add('bg-secondary-700', 'lg:bg-opacity-80', header.scrollTop > 200);
+      // });
 
       function toggleNav() {
         return {

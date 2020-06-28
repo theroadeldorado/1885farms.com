@@ -3,7 +3,7 @@
 @import 'tailwindcss/components';
 @import './node_modules/slick-carousel/slick/slick';
 /*! purgecss start ignore */
-@import './node_modules/aos/dist/aos.css';
+/* @import './node_modules/aos/dist/aos.css'; */
 /*! purgecss end ignore */
 
 /* base */
