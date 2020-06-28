@@ -25,15 +25,6 @@ get_header();
         $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
         ?>
 
-        <div
-          role="img"
-          aria-label="<?php print $image_alt; ?>"
-          class="bg-center bg-cover lozad"
-          data-background-image="<?php print aq_resize($image_url, 540, 360, true); ?>"
-        >
-          <h1 class="py-32 text-center text-white uppercase"><?php the_title();?></h1>
-        </div>
-
       <?php get_template_part( 'templates/content', 'page' );
 
     endwhile; // End of the loop.
