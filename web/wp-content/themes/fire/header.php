@@ -25,11 +25,10 @@
 <div id="page" class="relative site">
   <header
     x-data="toggleNav()"
-    :class="{ ' class ': isOpen }"
-    class="fixed top-0 z-50 w-full transition-all duration-300 site-header">
+    class="fixed top-0 z-50 w-full site-header">
     <!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> -->
 
-    <div class="container flex items-center justify-between my-4 text-white">
+    <div class="container z-40 flex items-center justify-between py-4 text-white" :class="{ ' show-nav ': isOpen }">
       <a
         class="flex-shrink-0 w-24 text-white lg:w-40"
         href="<?php echo esc_url( home_url( '/' ) ); ?>"
@@ -41,8 +40,8 @@
       <button
         @click="toggle()"
         type="button"
-        class="block lg:hidden"
-        :class="{ '': isOpen }"
+        class="block transform lg:hidden focus:outline-none "
+        :class="{ 'rotate-90 ': isOpen }"
       >
         <svg x-show="!isOpen" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="relative w-8 h-8"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg>
         <svg x-show="isOpen" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="relative w-8 h-8"><path fill="#fff" d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path></svg>
@@ -63,21 +62,22 @@
       </nav>
     </div>
 
-    <nav class="block mobile_nav lg:hidden bg-secondary-700"
+    <nav class="z-30 block origin-top mobile_nav lg:hidden bg-secondary-700"
       x-show="isOpen"
-      x-transition:enter="opacity-0"
-      x-transition:enter-start="opacity-0"
-      x-transition:enter-end="opacity-100"
-      x-transition:leave="opacity-100"
-      x-transition:leave-start="opacity-100"
-      x-transition:leave-end="opacity-0"
+      @click.away="isOpen = false"
+      x-transition:enter="transform transition ease-out duration-100"
+      x-transition:enter-start="-translate-y-8 transform opacity-0"
+      x-transition:enter-end="transform translate-y-0 opacity-100"
+      x-transition:leave="transition ease-out duration-100"
+      x-transition:leave-start="transform translate-y-0 opacity-100"
+      x-transition:leave-end="transform transform -translate-y-8 opacity-0"
     >
       <?php
       wp_nav_menu(
         array(
           'theme_location'  => 'menu-1',
           'menu_id'         => 'primary-menu',
-          'menu_class'      => 'list-none flex flex-col justify-end items-end my-6',
+          'menu_class'      => 'list-none flex flex-col justify-end items-end py-6',
           'list_item_class' => 'mx-6 my-4',
           'link_class'      => 'no-underline uppercase text-white text-20',
           )
@@ -86,13 +86,20 @@
     </nav>
 
     <script>
-      const header = document.querySelector('.site-header');
-
-      // document.addEventListener('scroll', () => {
-      //   header.classList.add('bg-secondary-700', 'lg:bg-opacity-80', header.scrollTop > 200);
-      // });
-
       function toggleNav() {
+        const firstSection = document.querySelector('.section--1');
+        const header = document.querySelector('.site-header');
+        const switchAt = firstSection.offsetHeight - header.offsetHeight;
+
+
+        document.addEventListener('scroll', () => {
+          if(window.scrollY > switchAt){
+            header.classList.add('bg-secondary-700', 'lg:bg-opacity-80');
+          } else {
+            header.classList.remove('bg-secondary-700', 'lg:bg-opacity-80');
+          }
+        });
+
         return {
           isOpen: false,
           toggle() {
