@@ -158,6 +158,7 @@ module.exports = {
       },
       height: {
         unset: 'unset',
+        '2px': '2px',
       },
       borderWidth: {
         1: '1px',

@@ -9,7 +9,7 @@
 
 <?php $section->start(); ?>
   <div class="container">
-    <h2 class="mt-12 mb-6 italic font-normal tracking-tight text-center normal-case text-48 text-secondary-500"><?php echo $title;?></h2>
+    <h2 class="my-12 italic font-normal tracking-tight text-center normal-case text-48 text-secondary-500"><?php echo $title;?></h2>
     <?php
     if( $gallery ): ?>
       <div class="grid grid-cols-2 gap-4 py-6 md:grid-cols-4">
@@ -17,7 +17,7 @@
         foreach( $gallery as $image ):
           $image_alt = get_post_meta($image['ID'] , '_wp_attachment_image_alt', true);?>
           <div class="relative transition-all duration-300 transform scale-100 aspect-ratio-square hover:shadow-800 hover:scale-105">
-            <a class="absolute object-cover w-full h-full" href="<?php print aq_resize($image['url'], 1200, 800, true); ?>" data-fancybox="<?php echo $title;?>" <?php echo $image['caption'] ? 'data-caption="'.$image['caption'].'"' : '' ; ?>>
+            <a class="absolute object-cover w-full h-full" href="<?php print aq_resize($image['url'], 1200, 800, true, true, true); ?>" data-fancybox="<?php echo $title;?>" <?php echo $image['caption'] ? 'data-caption="'.$image['caption'].'"' : '' ; ?>>
               <img src="<?php print aq_resize($image['url'], 600, 600, true, true, true); ?>" alt="<?php print $image_alt; ?>">
             </a>
 

@@ -65,7 +65,7 @@ hr {
 
   &:after {
     content: '';
-    @apply block w-24 h-1 bg-white bg-opacity-30 mb-0 mt-8;
+    @apply block w-24 h-2px bg-white bg-opacity-30 mb-0 mt-8;
 
     @screen md {
       @apply mb-10 mt-12;
@@ -75,6 +75,12 @@ hr {
 
 .show-nav {
   background: theme(colors.secondary.700) !important;
+}
+
+@responsive {
+  .gradient-white {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3393732492997199) 28%, rgba(255, 255, 255, 0) 58%);
+  }
 }
 
 /*! purgecss end ignore */
