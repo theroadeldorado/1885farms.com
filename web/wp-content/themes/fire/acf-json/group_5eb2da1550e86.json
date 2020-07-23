@@ -78,6 +78,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5ef8bbdfd4a96": {
+                    "key": "layout_5ef8bbdfd4a96",
+                    "name": "gallery",
+                    "label": "Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ef8bbe7d4a97",
+                            "label": "Gallery",
+                            "name": "gallery",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5ef7f5a7d7908"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5eb2daeeb6582": {
                     "key": "layout_5eb2daeeb6582",
                     "name": "hero",
@@ -140,16 +171,16 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_5ef8bbdfd4a96": {
-                    "key": "layout_5ef8bbdfd4a96",
-                    "name": "gallery",
-                    "label": "Gallery",
+                "layout_5f1a0f2699ef4": {
+                    "key": "layout_5f1a0f2699ef4",
+                    "name": "items_grid",
+                    "label": "Items Grid",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5ef8bbe7d4a97",
-                            "label": "Gallery",
-                            "name": "gallery",
+                            "key": "field_5f1a0f3199ef5",
+                            "label": "Items Grid",
+                            "name": "items_grid",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -160,7 +191,7 @@
                                 "id": ""
                             },
                             "clone": [
-                                "group_5ef7f5a7d7908"
+                                "group_5f1a0c9586abc"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -225,5 +256,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1593359400
+    "modified": 1595543368
 }
