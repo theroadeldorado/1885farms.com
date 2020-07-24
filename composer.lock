@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dab4ac6d51a54518dc517c9bb9c90a2",
+    "content-hash": "26ba8f94df592155582c7953cfa57b95",
     "packages": [
         {
             "name": "composer/installers",
@@ -494,6 +494,24 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/fullcalendar",
+            "version": "3.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fullcalendar/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fullcalendar.zip?timestamp=1550216090"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fullcalendar/"
         },
         {
             "name": "wpackagist-plugin/lh-hsts",
