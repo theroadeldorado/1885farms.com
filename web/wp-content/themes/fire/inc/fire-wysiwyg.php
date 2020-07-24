@@ -81,6 +81,26 @@
         ),
       ),
       array(
+        'title' => 'Style List',
+        'items' => array(
+          array(
+            'title' => 'One Column',
+            'selector' => 'ul',
+            'classes' => 'styled-list',
+          ),
+          array(
+            'title' => 'Two Column',
+            'selector' => 'ul',
+            'classes' => 'three-col styled-list'
+          ),
+          array(
+            'title' => 'Three Column',
+            'selector' => 'ul',
+            'classes' => 'three-col styled-list'
+          ),
+        ),
+      ),
+      array(
         'title' => 'Border Bottom',
         'selector' => 'p, a, h1, h2, h3, h4, h5, h6, li, span',
         'classes' => 'border-bottom'

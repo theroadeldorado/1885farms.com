@@ -45,4 +45,5 @@
     data-background-image="<?php echo get_stylesheet_directory_uri(). '/assets/media/images/splatter.png' ?>"
   >
   </div>
+
 <?php $section->end(); ?>
