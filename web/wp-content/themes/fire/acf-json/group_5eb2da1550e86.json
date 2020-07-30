@@ -16,6 +16,37 @@
                 "id": ""
             },
             "layouts": {
+                "layout_5f22238377c4e": {
+                    "key": "layout_5f22238377c4e",
+                    "name": "calendar",
+                    "label": "Calendar",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f22238a77c4f",
+                            "label": "Calendar",
+                            "name": "calendar",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f222354000dd"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5ef6bf321a1b7": {
                     "key": "layout_5ef6bf321a1b7",
                     "name": "copy_with_media",
@@ -256,5 +287,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1595543368
+    "modified": 1596072915
 }

@@ -4,6 +4,10 @@ import 'alpinejs/dist/alpine-ie11';
 import balanceText from 'balance-text';
 import 'slick-carousel';
 import AOS from 'aos';
+import { Calendar } from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
+
 import { FireDetect, FireComponentRecord, FireLazyLoader, FireHelpers } from '@base';
 
 const detect = new FireDetect();
@@ -35,6 +39,16 @@ const onPageReady = () => {
   // if (FireHelpers.isDesktop()) {
   //   AOS.init();
   // }
+
+  var calendarEl = document.getElementById('calendar');
+  let calendar = new Calendar(calendarEl, {
+    plugins: [dayGridPlugin, googleCalendarPlugin],
+    googleCalendarApiKey: 'AIzaSyCky0tuWulffU8xL94w0spHK_oeUYPYvXE',
+    events: {
+      googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
+    },
+  });
+  calendar.render();
 };
 
 // fire all scripts
