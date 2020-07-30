@@ -44,9 +44,17 @@ const onPageReady = () => {
   let calendar = new Calendar(calendarEl, {
     plugins: [dayGridPlugin, googleCalendarPlugin],
     googleCalendarApiKey: 'AIzaSyCky0tuWulffU8xL94w0spHK_oeUYPYvXE',
-    events: {
-      googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
-    },
+    eventSources: [
+      {
+        googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
+        className: 'the-house bg-secondary-500 border-none text-white',
+      },
+      {
+        googleCalendarId: 'nvnt6eevons0abl2b0469flr64@group.calendar.google.com',
+        className: 'the-barn bg-accent-500 border-none text-white',
+      },
+    ],
+    eventDisplay: 'block',
   });
   calendar.render();
 };
