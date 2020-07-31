@@ -5,6 +5,7 @@ import balanceText from 'balance-text';
 import 'slick-carousel';
 import AOS from 'aos';
 import { Calendar } from '@fullcalendar/core';
+import listPlugin from '@fullcalendar/list';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
@@ -57,7 +58,39 @@ const onPageReady = () => {
     eventDisplay: 'block',
   });
   calendar.render();
+
+  var listEl = document.getElementById('list');
+  let list = new Calendar(listEl, {
+    plugins: [listPlugin, googleCalendarPlugin],
+    initialView: 'listWeek',
+    googleCalendarApiKey: 'AIzaSyCky0tuWulffU8xL94w0spHK_oeUYPYvXE',
+    eventSources: [
+      {
+        googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
+        className: 'the-house bg-secondary-500 border-none text-white',
+      },
+      {
+        googleCalendarId: 'nvnt6eevons0abl2b0469flr64@group.calendar.google.com',
+        className: 'the-barn bg-accent-500 border-none text-white',
+      },
+    ],
+    eventDisplay: 'block',
+  });
+  list.render();
 };
+
+setTimeout(function () {
+  const houseDates = document.querySelectorAll('.the-house .fc-event-title');
+  houseDates.forEach((houseDate) => {
+    houseDate.innerHTML = 'House Reserved';
+  });
+  const baneDates = document.querySelectorAll('.the-barn .fc-event-title');
+  baneDates.forEach((baneDate) => {
+    baneDate.innerHTML = 'Barn Reserved';
+  });
+
+  $('[data-calendar]').removeClass('opacity-0');
+}, 1000);
 
 // fire all scripts
 $(document).ready(onPageReady);

@@ -1,11 +1,11 @@
 /* dependencies */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+/*! purgecss start ignore */
 @import './node_modules/slick-carousel/slick/slick';
 @import './node_modules/@fullcalendar/common/main.css';
 @import './node_modules/@fullcalendar/common/main.css';
 @import './node_modules/@fullcalendar/daygrid/main.css';
-/*! purgecss start ignore */
 /* @import './node_modules/aos/dist/aos.css'; */
 /*! purgecss end ignore */
 
