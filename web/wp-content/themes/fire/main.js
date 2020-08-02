@@ -52,10 +52,14 @@ const onPageReady = () => {
       },
       {
         googleCalendarId: 'nvnt6eevons0abl2b0469flr64@group.calendar.google.com',
-        className: 'the-barn bg-accent-500 border-none text-white',
+        className: 'the-barn bg-accent-500 border-none text-primary-500',
       },
     ],
     eventDisplay: 'block',
+    eventContent: 'Reserved',
+    eventClick: function (info) {
+      info.jsEvent.preventDefault();
+    },
   });
   calendar.render();
 
@@ -71,26 +75,39 @@ const onPageReady = () => {
       },
       {
         googleCalendarId: 'nvnt6eevons0abl2b0469flr64@group.calendar.google.com',
-        className: 'the-barn bg-accent-500 border-none text-white',
+        className: 'the-barn bg-accent-500 border-none text-primary-500',
       },
     ],
     eventDisplay: 'block',
+    eventContent: 'Reserved',
+    eventClick: function (info) {
+      info.jsEvent.preventDefault();
+    },
+    height: 'auto',
   });
   list.render();
 };
 
-setTimeout(function () {
-  const houseDates = document.querySelectorAll('.the-house .fc-event-title');
-  houseDates.forEach((houseDate) => {
-    houseDate.innerHTML = 'House Reserved';
-  });
-  const baneDates = document.querySelectorAll('.the-barn .fc-event-title');
-  baneDates.forEach((baneDate) => {
-    baneDate.innerHTML = 'Barn Reserved';
-  });
+// function updateDates(dates, string) {
+//   dates.forEach((date) => {
+//     date.innerHTML = string;
+//   });
+// }
 
-  $('[data-calendar]').removeClass('opacity-0');
-}, 1000);
+// setTimeout(function () {
+//   const houseDates = document.querySelectorAll('.the-house .fc-event-title');
+//   const barnDates = document.querySelectorAll('.the-barn .fc-event-title');
+//   const buttons = document.querySelectorAll('.fc-button');
+//   updateDates(houseDates, 'House Reserved');
+//   updateDates(barnDates, 'Barn Reserved');
+//   $('[data-calendar]').removeClass('opacity-0');
+//   buttons.forEach((button) => {
+//     button.addEventListener('click', () => {
+//       updateDates(houseDates, 'House Reserved');
+//       updateDates(barnDates, 'Barn Reserved');
+//     });
+//   });
+// }, 1000);
 
 // fire all scripts
 $(document).ready(onPageReady);

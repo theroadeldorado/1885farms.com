@@ -1,0 +1,31 @@
+.quote-slider {
+  &__track {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    scroll-snap-type: x mandatory;
+
+    .is-safari & {
+      scroll-snap-type: none;
+    }
+  }
+
+  &__slide {
+    scroll-snap-align: center;
+    @apply w-full;
+    max-width: calc(465px + (theme('spacing.8') * 2));
+    min-height: 240px;
+    @apply px-8;
+
+    img {
+      @screen md {
+        max-width: 200px;
+      }
+    }
+  }
+}

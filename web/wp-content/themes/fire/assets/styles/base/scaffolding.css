@@ -82,8 +82,62 @@ hr {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.3393732492997199) 28%, rgba(255, 255, 255, 0) 58%);
   }
 }
+.fc {
+  &-header-toolbar {
+    @screen smd {
+      @apply flex-wrap flex-col text-center;
+    }
+    .fc-toolbar-chunk {
+      @screen smd {
+        @apply text-center;
+      }
+      h2 {
+        @screen smd {
+          @apply mb-2;
+        }
+      }
+    }
+  }
 
-.fc-event-time {
-  display: none;
+  &-view a {
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none !important;
+  }
+
+  &-event {
+    &.the-barn {
+      .fc-event-main {
+        @apply text-secondary-700;
+      }
+    }
+
+    &-main {
+      @apply px-2 py-1;
+    }
+  }
+
+  &-list {
+    &-day {
+      th {
+        @apply bg-white border-none;
+      }
+      &-cushion {
+        @apply bg-white;
+
+        a {
+          @apply mx-1;
+        }
+      }
+    }
+    &-event {
+      @apply flex justify-center items-center border-none my-2 py-1;
+
+      td {
+        @apply border-none mx-1 font-medium text-center;
+      }
+    }
+  }
 }
+
 /*! purgecss end ignore */
