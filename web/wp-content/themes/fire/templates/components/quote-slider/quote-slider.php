@@ -22,13 +22,13 @@
 
       <?php
       while ( have_rows('quotes') ) : the_row();?>
-        <li class="flex items-center flex-shrink-0 quote-slider__slide" data-element="item">
+        <li class="flex items-center justify-center flex-shrink-0 quote-slider__slide" data-element="item">
             <a
               href="<?php the_permalink(); ?>"
-              class="relative flex flex-col items-center w-full h-full p-5 text-center no-underline transition-shadow duration-300 md:flex-row hover:shadow-brand"
+              class="relative flex flex-col items-center w-full h-full py-5 text-center no-underline transition-shadow duration-300 md:flex-row hover:shadow-brand"
             >
               <div class="text-black text-body">
-                <div class="relative italic font-medium text-accent-500 balance-text">
+                <div class="relative italic font-medium text-accent-500">
                   “<?php the_sub_field('quote'); ?>”
                 </div>
                 <div class="mt-4 font-bold text-accent-500"> - <?php the_sub_field('author');?></div>
