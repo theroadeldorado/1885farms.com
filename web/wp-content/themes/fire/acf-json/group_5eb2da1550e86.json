@@ -233,6 +233,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5f26fc69061ea": {
+                    "key": "layout_5f26fc69061ea",
+                    "name": "quote_slider",
+                    "label": "Quote Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f26fc6f061eb",
+                            "label": "Quote Slider",
+                            "name": "quote_slider",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5f26fb89201e6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5ef8bc0cd4a98": {
                     "key": "layout_5ef8bc0cd4a98",
                     "name": "styled_list",
@@ -287,5 +318,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1596072915
+    "modified": 1596390532
 }

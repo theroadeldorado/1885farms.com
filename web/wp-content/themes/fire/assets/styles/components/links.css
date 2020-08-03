@@ -33,5 +33,25 @@ a {
       @apply text-primary-700;
     }
   }
+
+  &-arrow-on-left {
+    &:hover {
+      &::after {
+        transform: translateX(-6px) rotate(180deg);
+      }
+    }
+
+    &::after {
+      @apply ml-0 mr-3;
+      @apply transform rotate-180;
+      order: -1;
+    }
+  }
+
+  &-no-arrow {
+    &:after {
+      display: none;
+    }
+  }
 }
 /*! purgecss end ignore */
