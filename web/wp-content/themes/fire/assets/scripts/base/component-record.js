@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import { FireHelpers } from '@base';
 import { CopyWithMedia } from '../../../templates/components/copy-with-media/copy-with-media';
+import { QuoteSlider } from '../../../templates/components/quote-slider/quote-slider';
+import { Cal } from '../../../templates/components/calendar/calendar';
 
 /**
  * @type class
@@ -20,6 +22,12 @@ export class FireComponentRecord {
     switch (name) {
       case 'copy-with-media':
         new CopyWithMedia(id).init();
+        break;
+      case 'quote-slider':
+        new QuoteSlider(id).init();
+        break;
+      case 'calendar':
+        new Cal(id).init();
         break;
       default:
         break;
