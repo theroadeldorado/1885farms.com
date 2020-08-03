@@ -103,6 +103,7 @@ hr {
     cursor: default;
     pointer-events: none;
     text-decoration: none !important;
+    border: none !important;
   }
 
   &-event {
