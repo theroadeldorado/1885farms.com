@@ -22,9 +22,10 @@
 @import './assets/styles/components/links';
 @import './assets/styles/components/skip-to-main';
 @import './assets/styles/components/videos';
-@import './assets/styles/components/slick';
+@import './templates/components/quote-slider/quote-slider';
 
 /* template components */
+@import './assets/styles/components/slick';
 
 /* dependencies */
 @import 'tailwindcss/utilities';

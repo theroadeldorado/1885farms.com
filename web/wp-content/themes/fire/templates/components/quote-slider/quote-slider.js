@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import { FireComponent } from '@base';
 
-export class PostsSlider extends FireComponent {
+export class QuoteSlider extends FireComponent {
   constructor(id) {
     super(id);
   }
