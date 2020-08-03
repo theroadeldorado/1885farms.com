@@ -26,7 +26,7 @@
       <a class="inline-block mt-4 no-underline text-18 md:text-24 hover:underline" href="tel:3304724371">330-472-4371</a><br>
       <div class="w-24 my-4 md:my-8 bg-primary-500 bg-opacity-30 h-2px"></div>
       <a class="inline-block no-underline md:mb-4 text-18 md:text-24 hover:underline" href="mailto:info@1885farms.com">info@1885farms.com</a><br>
-      <a class="inline-block no-underline text-18 md:text-24 hover:underline" target="_blank" href="https://www.google.com/maps/place/5553+Richville+Dr+SW,+Navarre,+OH+44662/data=!4m2!3m1!1s0x8836d916bcd54fe5:0xb20ab591ec920848?sa=X&ved=2ahUKEwiq69fl2a3qAhXKZs0KHcH3ADoQ8gEwAHoECAsQAQ">5553 Richville Dr. SW Navarre, OH</a>
+      <a class="inline-block no-underline text-18 md:text-24 hover:underline" target="_blank" href="https://www.google.com/maps/place/5553+Richville+Dr+SW,+Navarre,+OH+44662/data=!4m2!3m1!1s0x8836d916bcd54fe5:0xb20ab591ec920848?sa=X&ved=2ahUKEwiq69fl2a3qAhXKZs0KHcH3ADoQ8gEwAHoECAsQAQ">5553 Richville Dr. SW Navarre, OH 44662</a>
       <div class="mt-8 text-12"><?php echo '©'.the_date('Y').' '; _e('1885 Farms', 'fire'); ?></div>
     </div>
   </footer>
