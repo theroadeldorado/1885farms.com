@@ -15,12 +15,12 @@
         $text = get_sub_field('text'); ?>
 
         <div class="w-1/2 text-center md:w-1/3">
-          <div class="p-6">
+          <div class="p-2 md:p-6">
             <?php if($image):?>
               <img class="mb-4 lozad" src="<?php echo aq_resize($image['url'], 800, 600, true, true, true); ?>" alt="<?php echo $image['alt'];?>">
             <?php endif; ?>
             <?php if($text):?>
-              <h3 class="heading-fancy text-secondary-500 text-24 balance-text"><?php echo $text;?></h3>
+              <h3 class="heading-fancy text-secondary-500 text-18 md:text-20 lg:text-24 balance-text"><?php echo $text;?></h3>
             <?php endif; ?>
           </div>
         </div>
