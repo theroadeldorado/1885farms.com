@@ -119,6 +119,9 @@ hr {
   }
 
   &-list {
+    &-table {
+      @apply w-full;
+    }
     &-day {
       th {
         @apply bg-white border-none;

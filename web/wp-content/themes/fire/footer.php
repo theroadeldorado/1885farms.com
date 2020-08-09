@@ -23,7 +23,7 @@
 
     <div class="container relative z-10 pt-12 pb-4">
       <h2 class="heading-fancy text-primary-500">Call to schedule a visit</h2>
-      <a class="inline-block mt-4 no-underline text-18 md:text-24 hover:underline" href="tel:3305242276">330-524-BARN</a><br>
+      <a class="inline-block mt-4 no-underline text-18 md:text-24 hover:underline" href="tel:3305252276">330-525-BARN</a><br>
       <div class="w-24 my-4 md:my-8 bg-primary-500 bg-opacity-30 h-2px"></div>
       <a class="inline-block no-underline md:mb-4 text-18 md:text-24 hover:underline" href="mailto:richville5553@gmail.com">richville5553@gmail.com</a><br>
       <a class="inline-block no-underline text-18 md:text-24 hover:underline" target="_blank" href="https://www.google.com/maps/place/5553+Richville+Dr+SW,+Navarre,+OH+44662/data=!4m2!3m1!1s0x8836d916bcd54fe5:0xb20ab591ec920848?sa=X&ved=2ahUKEwiq69fl2a3qAhXKZs0KHcH3ADoQ8gEwAHoECAsQAQ">5553 Richville Dr. SW Navarre, OH 44662</a>
