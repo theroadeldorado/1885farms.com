@@ -21,6 +21,10 @@ export class Cal extends FireComponent {
           className: 'the-house bg-secondary-500 border-none text-white',
         },
         {
+          googleCalendarId: 'fvhoh6j1r27bs1d6ecuooot3mk6g9fo8@import.calendar.google.com',
+          className: 'the-house bg-secondary-500 border-none text-white',
+        },
+        {
           googleCalendarId: 'nvnt6eevons0abl2b0469flr64@group.calendar.google.com',
           className: 'the-barn bg-accent-500 border-none text-primary-500',
         },
