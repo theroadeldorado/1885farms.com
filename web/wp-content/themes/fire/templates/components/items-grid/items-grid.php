@@ -14,7 +14,7 @@
         $image = get_sub_field('image');
         $text = get_sub_field('text'); ?>
 
-        <div class="w-1/3 text-center">
+        <div class="w-1/2 text-center md:w-1/3">
           <div class="p-6">
             <?php if($image):?>
               <img class="mb-4 lozad" src="<?php echo aq_resize($image['url'], 800, 600, true, true, true); ?>" alt="<?php echo $image['alt'];?>">
