@@ -10,20 +10,27 @@ export class Cal extends FireComponent {
     super(id);
   }
 
+// {
+//   googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
+//   className: 'the-house bg-secondary-500 border-none text-white',
+// },
+// {
+//   googleCalendarId: 'fvhoh6j1r27bs1d6ecuooot3mk6g9fo8@import.calendar.google.com',
+//   className: 'the-house bg-secondary-500 border-none text-white',
+// },
+
+// for list section
+//  {
+//           googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
+//           className: 'the-house bg-secondary-500 border-none text-white',
+//         },
+
   _cal() {
     var calendarEl = document.getElementById('calendar');
     let calendar = new Calendar(calendarEl, {
       plugins: [dayGridPlugin, googleCalendarPlugin],
       googleCalendarApiKey: 'AIzaSyCky0tuWulffU8xL94w0spHK_oeUYPYvXE',
       eventSources: [
-        {
-          googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
-          className: 'the-house bg-secondary-500 border-none text-white',
-        },
-        {
-          googleCalendarId: 'fvhoh6j1r27bs1d6ecuooot3mk6g9fo8@import.calendar.google.com',
-          className: 'the-house bg-secondary-500 border-none text-white',
-        },
         {
           googleCalendarId: 'nvnt6eevons0abl2b0469flr64@group.calendar.google.com',
           className: 'the-barn bg-accent-500 border-none text-primary-500',
@@ -43,10 +50,6 @@ export class Cal extends FireComponent {
       initialView: 'listWeek',
       googleCalendarApiKey: 'AIzaSyCky0tuWulffU8xL94w0spHK_oeUYPYvXE',
       eventSources: [
-        {
-          googleCalendarId: 'lhajtht1tpjt8hbciua33tuk2b03bcle@import.calendar.google.com',
-          className: 'the-house bg-secondary-500 border-none text-white',
-        },
         {
           googleCalendarId: 'nvnt6eevons0abl2b0469flr64@group.calendar.google.com',
           className: 'the-barn bg-accent-500 border-none text-primary-500',
